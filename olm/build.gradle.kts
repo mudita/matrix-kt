@@ -40,19 +40,10 @@ if (HostManager.hostIsMingw) {
 
 kotlin {
     jvm()
-    if (useSingleTarget) {
-        if (HostManager.hostIsLinux) linuxX64()
-        if (HostManager.hostIsMac) macosX64()
-        if (HostManager.hostIsMingw) mingwX64()
-    } else {
-        linuxX64()
-        macosX64()
-        mingwX64()
-        iosArm32()
-        iosArm64()
-        iosX64()
-    }
-
+    iosArm32()
+    iosArm64()
+    iosX64()
+    
     explicitApi()
 
     sourceSets {

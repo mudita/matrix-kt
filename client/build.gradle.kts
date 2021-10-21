@@ -10,13 +10,6 @@ val coroutineVersion: String by rootProject.extra
 
 kotlin {
     jvm()
-    js {
-        browser()
-        nodejs()
-    }
-    linuxX64()
-    mingwX64()
-    macosX64()
     iosArm32()
     iosArm64()
     iosX64()
